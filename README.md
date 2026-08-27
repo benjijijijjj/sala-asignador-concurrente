@@ -1,3 +1,7 @@
+
+
+
+
 # Sistema de Asignacion de Salas - Programacion Concurrente
 
 Implementacion de un sistema de asignacion de salas utilizando programacion concurrente con estado compartido en Kotlin. Este proyecto demuestra los conceptos fundamentales de hilos, estado compartido y sincronizacion con bloqueos, desarrollado para el curso INF-223 Programacion Avanzada.
@@ -225,4 +229,4 @@ Este proyecto esta bajo la licencia MIT. Consulta el archivo LICENSE para mas de
 
 ## Video Demostrativo
 
-El video demostrativo de la implementacion y ejecucion del sistema esta disponible en el siguiente enlace: colocar_enlace_del_video_aqui
+El video demostrativo de la implementacion y ejecucion del sistema esta disponible en el siguiente enlace: https://github.com/user-attachments/assets/c6735d48-c502-4a45-8cc3-f83563ce9fc0
