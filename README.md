@@ -24,11 +24,11 @@ El proyecto implementa el paradigma de programacion concurrente con estado compa
 ---
 
 ## Requisitos del Sistema
-
+```
 - Java Development Kit (JDK) version 11 o superior
 - Kotlin 1.9.20 o superior
 - Gradle 7.0 o superior (incluido el wrapper en el proyecto)
-
+```
 ---
 
 ## Tutorial de Instalacion y Ejecucion
@@ -36,27 +36,27 @@ El proyecto implementa el paradigma de programacion concurrente con estado compa
 ### Paso 1: Clonar el repositorio
 
 Abre una terminal o PowerShell y ejecuta:
-
+```
 git clone https://github.com/benjijii/sala-asignador-concurrente.git
-
+```
 Luego ingresa a la carpeta del proyecto:
-
+```
 cd sala-asignador-concurrente
-
+```
 ---
 
 ### Paso 2: Verificar la instalacion de Java
 
 Para confirmar que Java esta instalado correctamente, ejecuta:
-
+```
 java -version
-
+```
 Deberias ver informacion similar a:
-
+```
 openjdk version "11.0.20" 2023-07-18
 OpenJDK Runtime Environment (build 11.0.20+8)
 OpenJDK 64-Bit Server VM (build 11.0.20+8, mixed mode)
-
+```
 Si no aparece, descarga e instala JDK desde oracle.com o adoptium.net.
 
 ---
@@ -64,13 +64,13 @@ Si no aparece, descarga e instala JDK desde oracle.com o adoptium.net.
 ### Paso 3: Compilar el proyecto
 
 Ejecuta el siguiente comando para compilar el proyecto:
-
+```
 ./gradlew clean build
-
+```
 En Windows, si el comando anterior no funciona, prueba:
-
+```
 gradlew clean build
-
+```
 Este proceso descargara las dependencias necesarias y compilara el codigo fuente. La salida esperada es:
 
 BUILD SUCCESSFUL in Xs
@@ -80,9 +80,9 @@ BUILD SUCCESSFUL in Xs
 ### Paso 4: Ejecutar el programa
 
 Para ejecutar la aplicacion principal, usa:
-
+```
 ./gradlew run
-
+```
 El programa realizara las siguientes acciones automaticamente:
 
 1. Creara un catalogo con 5 salas predefinidas, cada una con capacidad y equipamiento especifico
@@ -98,14 +98,14 @@ El programa realizara las siguientes acciones automaticamente:
 ### Paso 5: Ejecutar las pruebas unitarias
 
 Para verificar que todo funciona correctamente, ejecuta:
-
+```
 ./gradlew test
-
+```
 Deberias ver:
-
+```
 BUILD SUCCESSFUL in Xs
 3 tests completed, 0 failed
-
+```
 Esto confirma que las tres pruebas unitarias han pasado exitosamente.
 
 ---
@@ -113,7 +113,7 @@ Esto confirma que las tres pruebas unitarias han pasado exitosamente.
 ### Paso 6: Interpretar los resultados
 
 Al ejecutar el programa, veras una salida similar a:
-
+```
 === ESTADO INICIAL DEL CATALOGO DE SALAS ===
 Sala 1: Capacidad 30, Equipamiento proyector, pizarra, Ocupada: NO
 Sala 2: Capacidad 50, Equipamiento proyector, audio, pizarra, Ocupada: NO
@@ -127,7 +127,7 @@ Solicitud 2: ASIGNADA a Sala 4
 Solicitud 3: ASIGNADA a Sala 3
 Solicitud 4: ASIGNADA a Sala 5
 Solicitud 5: RECHAZADA - No hay sala disponible
-
+```
 Esto demuestra que el sistema proceso todas las solicitudes en paralelo y asigno las salas disponibles.
 
 ---
@@ -155,7 +155,7 @@ En el codigo, esto se implementa en la funcion procesarSolicitudesConcurrentes d
 ---
 
 ## Estructura del Proyecto
-
+```
 sala-asignador-concurrente/
    ├── build.gradle.kts          Configuracion de Gradle
    ├── settings.gradle.kts       Configuracion del proyecto
@@ -173,7 +173,7 @@ sala-asignador-concurrente/
                 └── com/
                     └── ucmaule/
                         └── SalaAsignadorTest.kt    Pruebas unitarias
-
+```
 ---
 
 ## Clases Principales
@@ -191,20 +191,23 @@ ResultadoAsignacion: Almacena el resultado de cada asignacion indicando exito o 
 ---
 
 ## Comandos Utiles
-
+```
 ./gradlew clean build   Limpia y compila el proyecto
-
+```
+```
 ./gradlew run           Ejecuta la aplicacion principal
-
+```
+```
 ./gradlew test          Ejecuta las pruebas unitarias
-
+```
+```
 ./gradlew clean         Limpia los archivos compilados
-
+```
 ---
 
 ## Contacto
 
-Integrantes: Benjamin Jara
+Integrantes: Benjamín Romo, Benjamín Vásquez, Benjamín Ruz, Marco Rifo y Rubén Sánchez.
 
 Docente: Ruber Hernandez
 
