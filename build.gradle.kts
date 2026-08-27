@@ -19,8 +19,9 @@ tasks.test {
     useJUnitPlatform()
 }
 
+
 application {
-    mainClass = "com.ucmaule.SalaAsignadorKt"
+    mainClass.set("com.ucmaule.SalaAsignadorKt")
 }
 
 kotlin {

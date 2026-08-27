@@ -224,11 +224,11 @@ fun main() {
 
     // Crear solicitudes de ejemplo
     val solicitudes = listOf(
-        Solicitud(capacidadRequerida = 30, equipamientoRequerido = listOf("proyector", "pizarra")),
-        Solicitud(capacidadRequerida = 45, equipamientoRequerido = listOf("audio", "proyector")),
-        Solicitud(capacidadRequerida = 25, equipamientoRequerido = listOf("pizarra")),
-        Solicitud(capacidadRequerida = 55, equipamientoRequerido = listOf("proyector", "audio", "pizarra")),
-        Solicitud(capacidadRequerida = 35, equipamientoRequerido = listOf("audio"))
+        Solicitud(id = 1, capacidadRequerida = 30, equipamientoRequerido = listOf("proyector", "pizarra")),
+        Solicitud(id = 2, capacidadRequerida = 45, equipamientoRequerido = listOf("audio", "proyector")),
+        Solicitud(id = 3, capacidadRequerida = 25, equipamientoRequerido = listOf("pizarra")),
+        Solicitud(id = 4, capacidadRequerida = 55, equipamientoRequerido = listOf("proyector", "audio", "pizarra")),
+        Solicitud(id = 5, capacidadRequerida = 35, equipamientoRequerido = listOf("audio"))
     )
 
     println("=== PROCESANDO SOLICITUDES DE FORMA CONCURRENTE ===")
